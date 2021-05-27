@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobile-first-3column-card-vanilla-html-and-css-bG04veN_W](https://www.frontendmentor.io/solutions/mobile-first-3column-card-vanilla-html-and-css-bG04veN_W)
+- Live Site URL: [https://maicon-fs.github.io/3-column-preview-card-component/](https://maicon-fs.github.io/3-column-preview-card-component/)
 
 ## My process
 
