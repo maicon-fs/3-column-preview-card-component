@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* NEUTRAL */
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-bg-hd-btns: hsl(0, 0%, 95%);
+
+    /* FONTS */
+    --lexend-deca: 'Lexend Deca', sans-serif;
+    --big-shoulders: 'Big Shoulders Display', sans-serif;
+}
+
+body{
+    font-size: 15px;
+    color: white;
+    font-family: var(--lexend-deca);
+}
+
+.container{
+    background-color: var(--very-light-gray-bg-hd-btns);
+    width: 100%;
+    height: auto;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.car__category{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.card__sedan{
+    background-color: var(--bright-orange);
+}
+
+.card__suv{
+    background-color: var(--dark-cyan);
+}
+
+.card__luxury{
+    background-color: var(--very-dark-cyan);
+}
+
+.cat__icon, .cat__title{
+    margin-bottom: 30px;
+}
+
+.cat__description{
+    margin-bottom: 20px;
+}
+
+.icon__sedan{
+    content: url('../images/icon-sedans.svg')
+}
+.icon__suvs{
+    content: url('../images/icon-suvs.svg')
+}
+.icon__luxury{
+    content: url('../images/icon-luxury.svg')
+}
+
+.cat__title{
+    font-family: var(--big-shoulders);
+    font-size: 40px;
+    color: var(--very-light-gray-bg-hd-btns);
+    text-transform: uppercase;
+}
+
+.cat__description{
+    font-size: 15px;
+    line-height: 27px;
+    color: var(--transparent-white-paragraphs);
+}
+
+.cat__button-btn{
+    font-family: var(--lexend-deca);
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--very-light-gray-bg-hd-btns);
+    border-radius: 50px;
+}
+
+.btn__sedans{
+    color: var(--bright-orange);
+}
+
+.btn__sedans:active{
+    color: var(--very-light-gray-bg-hd-btns);
+    border: 2px solid var(--very-light-gray-bg-hd-btns);
+    background-color: var(--bright-orange);
+}
+
+.btn__suvs{
+    color: var(--dark-cyan);
+}
+
+.btn__suvs:active{
+    color: var(--very-light-gray-bg-hd-btns);
+    border: 2px solid var(--very-light-gray-bg-hd-btns);
+    background-color: var(--dark-cyan);
+}
+
+.btn__luxury{
+    color: var(--very-dark-cyan);
+}
+
+.btn__luxury:active{
+    color: var(--very-light-gray-bg-hd-btns);
+    border: 2px solid var(--very-light-gray-bg-hd-btns);
+    background-color: var(--very-dark-cyan)
+}
+
+@media screen and (min-width: 376px) {    
+    .container{
+        height: 100vh;
+    }
+
+    .card-container{
+        width: 100%;
+        max-width: 920px;
+        min-height: 500px;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .cat__description{
+        font-size: 15px;
+        margin-bottom: 63px;
+    }
+
+    .car__category{
+        padding: 48px;
+    }
+
+    .cat__button-btn{
+        cursor: pointer;
+    }
+
+    .btn__sedans:hover{
+        color: var(--very-light-gray-bg-hd-btns);
+        border: 2px solid var(--very-light-gray-bg-hd-btns);
+        background-color: var(--bright-orange);
+    }
+    
+    .btn__suvs:hover{
+        color: var(--very-light-gray-bg-hd-btns);
+        border: 2px solid var(--very-light-gray-bg-hd-btns);
+        background-color: var(--dark-cyan);
+    }
+
+    .btn__luxury:hover{
+        color: var(--very-light-gray-bg-hd-btns);
+        border: 2px solid var(--very-light-gray-bg-hd-btns);
+        background-color: var(--very-dark-cyan)
+    }
+
+    .attribution{
+        margin-top: 50px;
+    }
+}
